@@ -1,6 +1,7 @@
 mod conditions;
 mod loops;
 mod strings;
+mod owner;
 
 fn main() {
     println!("Hello, world!");
@@ -20,4 +21,5 @@ fn main() {
     conditions::conditions();
     loops::loops();
     strings::strings();
+    owner::ownership();
 }

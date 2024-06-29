@@ -2,6 +2,7 @@ mod conditions;
 mod loops;
 mod strings;
 mod owner;
+mod enums;
 
 fn main() {
     println!("Hello, world!");
@@ -22,4 +23,5 @@ fn main() {
     loops::loops();
     strings::strings();
     owner::ownership();
+    enums::enums();
 }

@@ -3,6 +3,7 @@ mod loops;
 mod strings;
 mod owner;
 mod enums;
+mod structs;
 
 fn main() {
     println!("Hello, world!");
@@ -24,4 +25,5 @@ fn main() {
     strings::strings();
     owner::ownership();
     enums::enums();
+    structs::structs();
 }

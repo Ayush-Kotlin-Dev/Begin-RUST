@@ -8,6 +8,8 @@ mod borrowNref;
 mod patternMatching ;
 mod errorH;
 mod option_enum;
+use rand::Rng;
+use chrono::{Local, Utc};
 
 
 fn main() {
@@ -36,5 +38,21 @@ fn main() {
     errorH::error_handling();
     option_enum::option_enum();
 
+    let mut rng = rand::thread_rng();
+    let random_number = rng.gen_range(1..101);
+
+
+
+    // Crates and modules 
+    println!("Random number: {}", random_number);
+
+    let now = Utc::now();
+    println!("Current time is: {}", now);
+
+    let formatted = now.format("%Y-%m-%d %H:%M:%S").to_string();
+    println!("Formatted time: {}", formatted);
+    //get the local time
+    let local = Local::now();
+    println!("Local time: {}", local);
 
 }

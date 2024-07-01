@@ -4,6 +4,7 @@ mod strings;
 mod owner;
 mod enums;
 mod structs;
+mod borrowNref;
 
 fn main() {
     println!("Hello, world!");
@@ -26,4 +27,5 @@ fn main() {
     owner::ownership();
     enums::enums();
     structs::structs();
+    borrowNref::borrow();
 }

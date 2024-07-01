@@ -6,6 +6,8 @@ mod enums;
 mod structs;
 mod borrowNref;
 mod patternMatching ;
+mod errorH;
+
 
 fn main() {
     println!("Hello, world!");
@@ -29,6 +31,8 @@ fn main() {
     enums::enums();
     structs::structs();
     borrowNref::borrow();
-       patternMatching::Patternmatching()
+    patternMatching::Patternmatching();
+    errorH::error_handling();
+
 
 }

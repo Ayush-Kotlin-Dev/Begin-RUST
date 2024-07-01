@@ -7,6 +7,7 @@ mod structs;
 mod borrowNref;
 mod patternMatching ;
 mod errorH;
+mod option_enum;
 
 
 fn main() {
@@ -33,6 +34,7 @@ fn main() {
     borrowNref::borrow();
     patternMatching::Patternmatching();
     errorH::error_handling();
+    option_enum::option_enum();
 
 
 }
